@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prismix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="image-gallery/dist/image-gallery.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <script>
+        function openOverlay(imageUrl) {
+            document.getElementById('overlay-img').src = imageUrl;
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/gfp-astro-timelapse.mp4" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="#">Prismix</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" href="#0" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="2">Gallery</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="3">About</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="4">Contact</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>          
+        </div>        
+      </div>      
+      <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-left tm-bg-dark">
+                  <h2 class="mb-4">Welcome to Prismix</h2>
+                  <p class="mb-4">
+                    Your go-to destination for all things Pergola! Pergolas are not only beautiful outdoor structures, but they also symbolize relaxation, elegance, and creative design.</p>
+                  <p class="mb-0">
+                  Our mission is to offer you a multitude of information, inspiration, and resources to assist you in maximizing your pergola experience. Whether you need design ideas, installation tips, or maintenance, we're here to support you at every stage of your journey. </p>
+                </div>
+                <div class="intro-right">
+                  <img src="img/home-img-1.jpg" alt="Image" class="img-fluid intro-img-1">
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
+                  View Gallery
+                </a>
+              </div>            
+            </div>            
+          </li>
+          <li data-page-no="2">
+            <!-- Image Carousel -->
+            <div class="gallery">
+              <div class="gallery-item" onclick="openOverlay('img/home-img-2.jpg')">
+                  <img src="img/home-img-2_s.jpg" alt="Image 1">
+              </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_4.jpeg')">
+                    <img src="img/pergola_4_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_9.jpeg')">
+                    <img src="img/pergola_9_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_10.jpeg')">
+                    <img src="img/pergola_10_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_11.jpeg')">
+                    <img src="img/pergola_11_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_6.jpeg')">
+                    <img src="img/pergola_6_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_5.jpeg')">
+                    <img src="img/pergola_5_s.jpeg" alt="Image 1">
+                </div>
+                <div class="gallery-item" onclick="openOverlay('img/pergola_8.jpeg')">
+                    <img src="img/pergola_8_s.jpeg" alt="Image 1">
+                </div>
+                <br>
+                <!-- Add more gallery items here -->
+            </div>
+            <div class="overlay" id="overlay" onclick="closeOverlay()">
+                <img src="" alt="Overlay Image" id="overlay-img">
+            </div>
+          </li>
+          <li data-page-no="3">
+            <div class="page-width-1 page-right tm-content-container">
+              <div class="tm-bg-dark content-pad">
+                <h2>About our company</h2>
+                <p>
+                  Why Choose Prismix?
+                </p>
+                <p>
+                  Prismix, with its extensive experience in aluminum extrusion profiles, is venturing into a new realm, offering innovative and sustainable solutions under the brand name Prismix. As Prismix, we are committed to becoming the foremost brand in Aluminum Outdoor Systems, and we're taking bold steps toward achieving this goal.
+                </p>
+                <p>
+                  Our Commitment to You
+                </p>
+                <p>
+                  At Prismix, we are proud to have a professional management team, a seasoned and well-equipped marketing department, and a robust CRM (Customer Relations Management) policy. Customer satisfaction is our top priority, and we go above and beyond to ensure that you receive the support and guidance you need at every stage of your pergola journey.
+                </p>
+                <p>
+                  Quality Assurance
+                </p>
+                <p>
+                  We stand behind the quality of our products, as evidenced by our various certifications and the satisfaction of our customers, whether they are intermediary firms or end users. With a successful worldwide sales network, Prismix is well-equipped to meet the demands of customers.
+                </p>
+                <p> 
+                  Whether you seek design inspiration, installation expertise, or maintenance guidance, Prismix is here to serve as your trusted partner in creating the pergola of your dreams. Join us on this exciting journey as we redefine outdoor living with innovative aluminum outdoor systems that reflect your style and aspirations.
+                </p>
+              </div>              
+            </div>
+          </li>
+          <li data-page-no="4">
+            <div class="mx-auto page-width-2">
+              <div class="row">
+                <div class="col-md-6 me-0 ms-auto">
+                  <h2 class="mb-4">Contact Us</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 tm-contact-left">
+                  <form action="https://formspree.io/f/xleypvek" method="POST" class="contact-form">
+                    <div class="input-group tm-mb-30">
+                        <input name="name" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name">
+                    </div>
+                    <div class="input-group tm-mb-30">
+                        <input name="email" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Email">
+                    </div>
+                    <div class="input-group tm-mb-30">
+                        <textarea rows="5" name="message" class="textarea form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-group justify-content-end">
+                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6 tm-contact-right tm-bg-dark content-pad">                  
+                  <p class="mb-4">
+                    Ready to turn your pergola dreams into reality? 
+                  </p>
+                  <p>
+                    We're here to help you every step of the way. Whether you have questions, need assistance, or are eager to explore our innovative aluminum outdoor systems, our team is just a message away.
+                  </p>
+                  <div>
+                    Email: <a href="mailto:pergo-heaven@gmail.com" class="tm-link-white">pergo-heaven@gmail.com</a>
+                  </div>
+                  <div class="tm-mb-45">
+                    Tel: <a href="tel:385911101986" class="tm-link-white">+385 91 110 1986</a>
+                  </div>
+                  <!-- Map -->
+                  <div class="map-outer">
+                    <div class="gmap-canvas">
+                        <iframe width="100%" height="400" id="gmap-canvas"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89754.3291282395!2d14.471612003368119!3d45.332200902266244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2shr!4v1695556272853!5m2!1sen!2shr"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+      <footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          © 2023 Prismix.
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">            
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>  
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/templatemo-script.js"></script>
+</body>
+</html>
+
+
+
