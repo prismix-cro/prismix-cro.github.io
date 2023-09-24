@@ -625,6 +625,11 @@ figure.effect-julia:hover p {
         position: relative;
     }
 
+    .page-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+
     .intro-left {
         margin-right: 0;
         margin-bottom: 20px;
